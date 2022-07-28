@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forumlario de cadastro</title>
+</head>
+<body>
+    <h1 id="title">Forumlario de cadastro</h1>
+    <p id="description">Os dados fornecidos nesse formulario serão avaliados para a vaga</p>
+
+    <form id="survey-form">
+
+        <div class="form-field">
+            <label for="name" id="name-label">Insira seu nome</label>
+            <input type="text" id="name" placeholder="Marcos.." required>
+        </div>
+
+        <div class="form-field">
+            <label for="email" id="email-label">Insira seu email</label>
+            <input type="email" id="email" placeholder="marcos@email.com" required>
+        </div>
+
+        <div class="form-field">        
+            <label for="number" id="number-label">Informe seu numero de telefone</label>
+            <input type="number" id="number" min="1" max="5000000000" placeholder="(12)1234784836" required>
+        </div>
+
+        <div class="form-field">
+            <h5>Nos informe qual é sua stack</h5>
+            <select name="" id="dropdown" required>
+                <option name="selecione" selected disabled value="">Selecione</option>
+                <option name="Front-End" value="">Front-End</option>
+                <option name="Back-End" value="">Back-End</option>
+                <option name="Full-Stack" value="">Full-Stack</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <h5>Tecnologias que você domina:</h5>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="" id="html" value="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="" id="css" value="css">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" name="" id="javascript" value="javascript">
+            <label for="php">Php</label>
+            <input type="checkbox" name="" id="php" value="php">
+            <label for="java">Java</label>
+            <input type="checkbox" name="" id="java" value="java">
+            <label for="react">React</label>
+            <input type="checkbox" name="" id="react" value="react">
+            <label for="angular">Angular</label>
+            <input type="checkbox" name="" id="angular" value="angular">
+            <label for="vue">Vue</label>
+            <input type="checkbox" name="" id="vue" value="vue">
+        </div>
+
+        <div class="form-field">
+            <h5>Aceita trabalhar remotamente</h5>
+            <label for="yes">Sim</label>
+            <input type="radio" name="remote-work" value="yes" id="yes">
+            <label for="no">Não</label>
+            <input type="radio" name="remote-work" value="yes" id="no">
+        </div>
+
+        <div class="form-field">
+            <h5>Deixe sua sujestão</h5>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+    color: rgb(239, 239, 239);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid rgb(134, 134, 134);
+}
+
+#navbar header {
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    padding: 15px 15px 15px 25px;
+    border-top: 1px solid white;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+}
+
+#main-doc {
+    margin-left: 310px;
+    padding: 20px;
+}
+
+#main-doc header {
+    padding-top: 10px;
+}
+
+#main-doc .main-section article {
+    padding: 20px 0 0 15px;
+}
+
+#main-doc .main-section article ul {
+    padding-left: 45px;
+}
+
+#main-doc .main-section article ul li {
+    line-height: 23px;
+    padding: 7px;
+}
+
+#main-doc p {
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+
+#main-doc code {
+    display: block;
+    background-color: black;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    white-space: pre-line;
+}
+
+@media screen and (max-width: 750px) {
+    p, ul,li, a{
+        font-size: 13px;
+    }
+    #navbar {
+        width: 100%;
+        height: 23%;
+        max-height: 30%;
+        overflow: hidden;
+        border-right: 0px;
+        background-color: #242424;
+    }
+    #navbar header {
+        padding: 10px;
+    }
+    #main-doc {
+        margin-left: 0;
+        margin-top: 150px;
+        padding: 10px;
+    }
+}
